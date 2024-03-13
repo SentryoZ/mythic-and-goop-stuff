@@ -1,0 +1,72 @@
+ranged-slow:
+  chance: 0.4
+  prefix: '&8Slow'
+  stats:
+    attack-speed:
+      base: -.2
+ranged-ignorant:
+  chance: 0.4
+  prefix: '&8Ignorant'
+  stats:
+    critical-strike-chance:
+      base: -20
+ranged-broken:
+  chance: 0.4
+  prefix: '&8Broken'
+  stats:
+    critical-strike-chance:
+      base: -20
+    attack-speed:
+      base: -.15
+    weapon-damage:
+      base: -30
+ranged-swiftly:
+  chance: 0.4
+  prefix: '&7Swiftly'
+  stats:
+    attack-speed:
+      base: .15
+ranged-weak:
+  chance: 0.4
+  prefix: '&8Weak'
+  stats:
+    weapon-damage:
+      base: -10
+ranged-hurtful:
+  chance: 0.4
+  prefix: '&7Hurtful'
+  stats:
+    weapon-damage:
+      base: 5
+ranged-accurate:
+  chance: 0.4
+  prefix: '&7Accurate'
+  stats:
+    critical-strike-chance:
+      base: 10
+ranged-quick:
+  chance: 0.4
+  prefix: '&7Quick'
+  stats:
+    attack-speed:
+      base: .12
+ranged-deadly:
+  chance: 0.2
+  prefix: '&bDeadly'
+  stats:
+    weapon-damage:
+      base: 10
+    critical-strike-chance:
+      base: 5
+    critical-strike-power:
+      base: 6
+ranged-murderous:
+  chance: 0.24
+  prefix: '&bMurderous'
+  stats:
+    weapon-damage:
+      base: 6
+    critical-strike-chance:
+      base: 2
+    critical-strike-power:
+      base: 3

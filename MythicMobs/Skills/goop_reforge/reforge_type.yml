@@ -1,0 +1,33 @@
+ReforgeRanged:
+  Conditions:
+    - score{objective=itemType;v=2}
+  Skills:
+    - randomskill{
+      skills=
+      ReforgeStrong,
+      ReforgeDeadly
+      }
+
+ReforgeMelee:
+  Conditions:
+    - score{objective=itemType;v=1}
+  Skills:
+    - randomskill{
+      skills=
+      ReforgeStrong,
+      ReforgeDeadly,
+      ReforgeDull,
+      ReforgeBroken,
+      ReforgeSluggish,
+      ReforgeQuick,
+      ReforgeLucky,
+      ReforgeHeavy,
+      ReforgeLightened,
+      ReforgeSharp,
+      ReforgeStrong,
+      ReforgeRuthless,
+      ReforgeDeadly,
+      ReforgeMurderous,
+      ReforgeLegendary,
+      ReforgeSpicy
+      }

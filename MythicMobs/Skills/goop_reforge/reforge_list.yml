@@ -1,0 +1,45 @@
+ReforgeStrong:
+  Skills:
+    - command{c="goop mmoitems modifier <target.name> c<INPUT> strong"}
+ReforgeDeadly:
+  Skills:
+    - command{c="goop mmoitems modifier <target.name> c<INPUT> deadly"}
+ReforgeDull:
+  Skills:
+    - command{c="goop mmoitems modifier <target.name> c<INPUT> dull"}
+ReforgeBroken:
+  Skills:
+    - command{c="goop mmoitems modifier <target.name> c<INPUT> broken"}
+ReforgeSluggish:
+  Skills:
+    - command{c="goop mmoitems modifier <target.name> c<INPUT> sluggish"}
+ReforgeQuick:
+  Skills:
+    - command{c="goop mmoitems modifier <target.name> c<INPUT> quick"}
+ReforgeLucky:
+  Skills:
+    - command{c="goop mmoitems modifier <target.name> c<INPUT> lucky"}
+ReforgeHeavy:
+  Skills:
+    - command{c="goop mmoitems modifier <target.name> c<INPUT> heavy"}
+ReforgeLightened:
+  Skills:
+    - command{c="goop mmoitems modifier <target.name> c<INPUT> lightened"}
+ReforgeSharp:
+  Skills:
+    - command{c="goop mmoitems modifier <target.name> c<INPUT> sharp"}
+ReforgeRuthless:
+  Skills:
+    - command{c="goop mmoitems modifier <target.name> c<INPUT> ruthless"}
+ReforgeMurderous:
+  Skills:
+    - command{c="goop mmoitems modifier <target.name> c<INPUT> murderous"}
+ReforgeForceful:
+  Skills:
+    - command{c="goop mmoitems modifier <target.name> c<INPUT> forceful"}
+ReforgeLegendary:
+  Skills:
+    - command{c="goop mmoitems modifier <target.name> c<INPUT> legendary"}
+ReforgeSpicy:
+  Skills:
+    - command{c="goop mmoitems modifier <target.name> c<INPUT> spicy"}

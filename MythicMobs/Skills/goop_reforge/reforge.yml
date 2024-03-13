@@ -1,0 +1,81 @@
+#Should test it in survival mode
+
+ReforgeInit:
+  Skills:
+    #1 Init item type, default is 0
+    - settargetscore{objective=itemType;value=0} @Self
+
+    #2 Check item type in container
+
+    # Melee = 1
+    - command{c="goop testinventory <caster.name> c<INPUT> m SWORD * 1 itemType 1"}
+    - command{c="goop testinventory <caster.name> c<INPUT> m AXE * 1 itemType 1"}
+    - command{c="goop testinventory <caster.name> c<INPUT> m HAMMER * 1 itemType 1"}
+    - command{c="goop testinventory <caster.name> c<INPUT> m SPEAR * 1 itemType 1"}
+    - command{c="goop testinventory <caster.name> c<INPUT> m DAGGER * 1 itemType 1"}
+    - command{c="goop testinventory <caster.name> c<INPUT> m THRUSTINGSWORD * 1 itemType 1"}
+    - command{c="goop testinventory <caster.name> c<INPUT> m GAUNTLET * 1 itemType 1"}
+    - command{c="goop testinventory <caster.name> c<INPUT> m GREATSWORD * 1 itemType 1"}
+    - command{c="goop testinventory <caster.name> c<INPUT> m WHIP * 1 itemType 1"}
+    - command{c="goop testinventory <caster.name> c<INPUT> m KATANA * 1 itemType 1"}
+    - command{c="goop testinventory <caster.name> c<INPUT> m GREATAXE * 1 itemType 1"}
+    - command{c="goop testinventory <caster.name> c<INPUT> m HALBERD * 1 itemType 1"}
+    - command{c="goop testinventory <caster.name> c<INPUT> m LANCE * 1 itemType 1"}
+    - command{c="goop testinventory <caster.name> c<INPUT> m GREATHAMMER * 1 itemType 1"}
+
+    # Ranged = 2
+    - command{c="goop testinventory <caster.name> c<INPUT> m BOW * 1 itemType 2"}
+    - command{c="goop testinventory <caster.name> c<INPUT> m CROSSBOW * 1 itemType 2"}
+    - command{c="goop testinventory <caster.name> c<INPUT> m MUSKET * 1 itemType 2"}
+    - command{c="goop testinventory <caster.name> c<INPUT> m GREATBOW * 1 itemType 2"}
+
+    # Magic = 3
+    - command{c="goop testinventory <caster.name> c<INPUT> m STAFF * 1 itemType 3"}
+    - command{c="goop testinventory <caster.name> c<INPUT> m STAVE * 1 itemType 3"}
+    - command{c="goop testinventory <caster.name> c<INPUT> m WAND * 1 itemType 3"}
+    - command{c="goop testinventory <caster.name> c<INPUT> m LUTE * 1 itemType 3"}
+    - command{c="goop testinventory <caster.name> c<INPUT> m GREATSTAFF * 1 itemType 3"}
+
+    # Armor = 4
+    - command{c="goop testinventory <caster.name> c<INPUT> m ARMOR * 1 itemType 4"}
+
+    # Accessory = 5
+    - command{c="goop testinventory <caster.name> c<INPUT> m ACCESSORY * 1 itemType 5"}
+
+    # Debug
+    # - command{c="goop tell <target.name> <caster.score.itemType>"}
+
+    # Required money
+    # - command{c="goop vault checkbalance <caster.name> 0..499 itemType -1"}
+
+    #3 Do reforge
+    - skill{s=DoReforge}
+
+DoReforge:
+  Conditions:
+    - score{objective=itemType;v=>1,orElseCast=ReforgeFail}
+  Skills:
+    - sound{s=block.anvil.use}
+    - command{c="goop mmoitems modifier <target.name> c<INPUT> none"}
+    - delay 1
+    - skill{s=Reforge-Melee}
+    - skill{s=Reforge-Ranged}
+    - delay 10
+    - sound{s=block.anvil.use}
+
+ReforgeFail:
+  Skills:
+    - command{c="goop tell <target.name> Can not reforge this item or you don't have enough money"}
+
+ReforgeMismatchType:
+  Conditions:
+    - score{objective=itemType;v=0}
+  Skills:
+    - command{c="goop tell <target.name> Can not reforge this item"}
+
+
+ReforgeNotEnoughFund:
+  Conditions:
+    - score{objective=itemType;v=-1}
+  Skills:
+    - command{c="goop tell <target.name> You don't have enough money"}

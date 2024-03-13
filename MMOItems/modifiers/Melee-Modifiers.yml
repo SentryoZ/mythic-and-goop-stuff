@@ -1,0 +1,126 @@
+dull:
+  chance: 0.4
+  prefix: '&8Dull'
+  stats:
+    weapon-damage:
+      base: -20
+broken:
+  chance: 0.3
+  prefix: '&8Broken'
+  stats:
+    weapon-damage:
+      base: -20
+    attack-speed:
+      base: -.1
+sluggish:
+  chance: 0.4
+  prefix: '&8Sluggish'
+  stats:
+    attack-speed:
+      base: -.1
+quick:
+  chance: 0.5
+  prefix: '&7Quick'
+  stats:
+    attack-speed:
+      base: .4
+lucky:
+  chance: 0.5
+  prefix: '&7Lucky'
+  stats:
+    critical-strike-chance:
+      base: 5
+heavy:
+  chance: 0.4
+  prefix: '&7Heavy'
+  stats:
+    weapon-damage:
+      base: 5
+    attack-speed:
+      base: -.1
+lightened:
+  chance: 0.5
+  prefix: '&7Lightened'
+  stats:
+    weapon-damage:
+      base: -5
+    attack-speed:
+      base: .3
+sharp:
+  chance: 0.5
+  prefix: '&7Sharp'
+  stats:
+    weapon-damage:
+      base: 10
+strong:
+  chance: 0.4
+  prefix: '&7Strong'
+  stats:
+    weapon-damage:
+      base: 5
+    critical-strike-chance:
+      base: 3
+nimble:
+  chance: 0.4
+  prefix: '&7Nimble'
+  stats:
+    attack-speed:
+      base: .15
+ruthless:
+  chance: 0.33
+  prefix: '&7Ruthless'
+  stats:
+    attack-speed:
+      base: .15
+    weapon-damage:
+      base: 10
+    critical-strike-chance:
+      base: -15
+deadly:
+  chance: 0.2
+  prefix: '&bDeadly'
+  stats:
+    weapon-damage:
+      base: 10
+    critical-strike-chance:
+      base: 5
+    critical-strike-power:
+      base: 6
+murderous:
+  chance: 0.24
+  prefix: '&bMurderous'
+  stats:
+    weapon-damage:
+      base: 6
+    critical-strike-chance:
+      base: 2
+    critical-strike-power:
+      base: 3
+forceful:
+  chance: 0.24
+  prefix: '&bForceful'
+  stats:
+    critical-strike-chance:
+      base: 20
+    critical-strike-power:
+      base: -5
+legendary:
+  chance: 0.05
+  prefix: '&eLegendary'
+  stats:
+    weapon-damage:
+      base: 10
+    critical-strike-chance:
+      base: 10
+    critical-strike-power:
+      base: 5
+    attack-speed:
+      base: .3
+    pve-damage:
+      base: 7
+spicy:
+  chance: 0.06
+  prefix: '&cSpicy'
+  stats:
+    attack-speed: 2
+    weapon-damage: 5
